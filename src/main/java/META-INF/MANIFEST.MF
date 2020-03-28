@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Main-Class: hue.edu.xiong.volunteer_travel.VolunteerTravelApplication
+

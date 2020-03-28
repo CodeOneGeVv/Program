@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+  <DecisionTree value="null">
+    <job value="politician">
+      <age value="0-20">2</age>
+      <age value="20-30">2</age>
+      <age value="30-40">2</age>
+      <age value="40-60">4</age>
+      <age value="60+">4</age>
+    </job>
+    <job value="technicist">
+      <sex value="0"/>
+      <sex value="1"/>
+    </job>
+    <job value="worker"/>
+    <job value="service"/>
+    <job value="production"/>
+    <job value="operation"/>
+    <job value="soldier"/>
+    <job value="others"/>
+  </DecisionTree>
+</root>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org"
+        layout:decorate="~{base/layout}">
+<div layout:fragment="content">
+    <!--med_tittle_section-->
+    <div class="med_tittle_section">
+        <div class="med_img_overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="med_tittle_cont_wrapper">
+                        <div class="med_tittle_cont">
+                            <ol class="breadcrumb">
+                                <li><a th:href="@{/}">首页</a></li>
+                                <li>线路推荐</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- med_tittle_section End -->
+    <!--service section start-->
+    <div class="page-container">
+        <div class="container">
+            <div class="row med_toppadder50 med_bottompadder50">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3">
+                    <form th:action="@{/recommend/recommendForm}" name="form-submit" id="form-submit" method="post" class="cy-form boxed">
+                        <header>旅游路线推荐</header>
+                        <fieldset>
+                            <section>
+                                性别：&nbsp;&nbsp;&nbsp;
+                                <label >
+                                    <input  name="sex" type="radio" value="0">  男
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label >&nbsp;&nbsp;&nbsp;
+                                    <input  name="sex" type="radio" value="1">  女
+                                </label>
+                                <br>
+                                年龄段：
+                                <label >
+                                <input name="age" type="radio" value="0-20">  0岁-20岁
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label >
+                                    <input name="age" type="radio" value="20-30">  20岁-30岁
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <label >
+                                    <input name="age" type="radio" value="30-40">  30岁-40岁
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="age" type="radio" value="40-60">  40岁-60岁
+                                </label>&nbsp;&nbsp;&nbsp;
+                                <label >
+                                    <input name="age" type="radio" value="60+">  60岁以上
+                                </label>
+                                <br>
+                                职业：&nbsp;&nbsp;&nbsp;
+                                <label >
+                                    <input name="job" type="radio" value="politician">  国家机关、党群组织、企业、事业单位负责人
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="job" type="radio" value="technicist">  专业技术人员
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="job" type="radio" value="worker">  办事人员和有关人员
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="job" type="radio" value="service">  商业、服务业人员
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="job" type="radio" value="production">  农、林、牧、渔、水利业生产人员
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="job" type="radio" value="operation">  生产、运输设备操作人员及有关人员
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="job" type="radio" value="soldier">  军人
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="job" type="radio" value="others">  不便分类的其他从业人员
+                                </label>
+                                <br>
+                                月收入：
+                                <label >
+                                    <input name="income" type="radio" value="null">  无收入
+                                </label>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="income" type="radio" value="0k-6k">  0k-6k
+                                </label>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="income" type="radio" value="6k-10k">  6k-10k
+                                </label>
+                                <br>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="income" type="radio" value="10k-15k">  10k-15k
+                                </label>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="income" type="radio" value="15k-30k">  15k-30k
+                                </label>
+                                <label >&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <input name="income" type="radio" value="30k+">  30k以上
+                                </label>
+                            </section>
+                        </fieldset>
+                        <footer>
+                            <button  type="submit"  class="button">提 交</button>
+                        </footer>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</html>
